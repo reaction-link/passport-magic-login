@@ -19,5 +19,5 @@ export const decodeToken = (secret: string, token?: string) => {
 
 export const generateToken = (secret: string, payload: JwtPayload) =>
   jwt.sign(payload, secret, {
-    expiresIn: '60min',
+    expiresIn: '2 days',
   });
